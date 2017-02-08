@@ -1,0 +1,90 @@
+#id1 {
+  position: relative;
+  left: 5px;
+  font-size: 25px;
+  color: blue;
+}
+.link1 {
+  color: red;
+  position: relative;
+  left: 380px;
+}
+.link2 {
+  color: blue;
+  position: relative;
+  left: 380px;
+}
+.body {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  heigth: 50%;
+}
+.tail {
+}
+
+#searchBar {
+  border: 1px solid #000000;
+  border-right: none;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  width: 250p;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#searchBtn {
+  border: 1px solid #000000;
+  font-size: 16px;
+  padding: 10px;
+  background: #99ff66;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header, footer {
+   padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: left;
+    font-family:Cursive;
+    font-size:20px;
+}
+
+.box {
+  margin: 20px auto;
+  position: relative;
+  top: 150px;
+  left: 70px;
+  width: 343px; 
+  height: 620px;
+}
+
+
+
+.dropbox {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbox:hover, .dropbox:focus {
+    background-color: #3e8e41;
+}
+
