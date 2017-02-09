@@ -3,32 +3,38 @@
 <head>
   <title>Welcome Page</title>
   <link type="text/css" rel="stylesheet" href="./CSS/welcome.css"/>
+  <script type="text/javascript" src="./JS/welcome.js"></script>
 </head>
-  <body background="http://www.trbimg.com/img-550aecbf/turbine/sfp-eight-diet-and-exercise-mistakes-that-age--001/1280/1280x720" background-repeat: no-repeat>
-  <div class="container">
-    <header>
-		<font-color = "white">DESSERT METER
-      <a href="./HTML/signup.html" class="link1">Login</a>
-      <a href="./HTML/signup.html" class="link2">Sign Up</a>
-    </header>
+<body class="div-body">
+  <div>
+  	<div class="container" style="background-color:#000000; overflow:auto;">
+    	<div style = "float:left"><h1 style = "color: white">DESSERT METER</h1></div>
+		<div style = "float:right">
+			<div style="padding: 9px 5px 8px 5px">
+				<input class="button" type="submit" style="width:70px" value="Login" onclick="window.location='./HTML/signup.html';" />
+			</div>
+			<div style="padding: 8px 5px 9px 5px">
+				<input class="button" type="submit" style="width:70px" value="Sign Up" onclick="window.location='./HTML/signup.html';" />
+			</div>
+      	</div>
+  	</div>
   </div>
-    <hr>
-    <div class="box">
-      <h3 id="id1">My Favourite Dessert</h3>
-      <input list="browsers" class="dropbox"  placeholder="Search.." id="searchBar" autocomplete="off" /><input type="submit" id="searchBtn" value="&#8594;" />
-    
-  <datalist id="browsers">
-    <option value="Cake">
-    <option value="Chocolate Mousse">
-    <option value="Tart">
-    <option value="Ice Cream">
-    <option value="Oreo Shake">
-  </datalist>
-  
+  <div class="box">
+  	<h3 id="id1"> My Favourite Dessert </h3>
+  	<input list="browsers" class="dropbox"  placeholder="Search.." id="searchBar" autocomplete="off" />
+  	<input type="submit" id="searchBtn" value="&#8594;" onclick="myD()"/>
   </div>
-	<div class="container no-padding" >  
-		<p>&copy; 2017 Team DASH - HCI. ALL RIGHTS RESERVED</p>
-  </div>
-  </div>
+  	<datalist id="browsers">
+    	<option value="Cake">
+    	<option value="Chocolate Mousse">
+    	<option value="Tart">
+    	<option value="Ice Cream">
+    	<option value="Oreo Shake">
+  	</datalist>
+   
+   <div class="container no-padding" style="background-color:#000000; overflow:auto;">
+   	<p style="color:white">&copy; 2017 Team DASH - HCI. ALL RIGHTS RESERVED</p>
+   </div>
+
 </body>
 </html>

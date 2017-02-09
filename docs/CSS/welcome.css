@@ -1,8 +1,8 @@
 #id1 {
   position: relative;
-  left: 5px;
-  font-size: 25px;
-  color: blue;
+  font-size: 35px;
+  font-family: Georgia, serif;
+  color: white;
 }
 .link1 {
   color: red;
@@ -22,11 +22,10 @@
 }
 .tail {
 }
-
 #searchBar {
   border: 1px solid #000000;
   border-right: none;
-  font-size: 16px;
+  font-size: 26px;
   padding: 10px;
   outline: none;
   width: 250p;
@@ -37,12 +36,10 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-
 #searchBtn {
   border: 1px solid #000000;
-  font-size: 16px;
+  font-size: 26px;
   padding: 10px;
-  background: #99ff66;
   font-weight: bold;
   cursor: pointer;
   outline: none;
@@ -53,7 +50,6 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
 header, footer {
    padding: 1px;
     color: white;
@@ -63,28 +59,51 @@ header, footer {
     font-family:Cursive;
     font-size:20px;
 }
-
 .box {
   margin: 20px auto;
   position: relative;
   top: 150px;
   left: 70px;
-  width: 343px; 
+  width: 443px;
   height: 620px;
 }
 
-
-
 .dropbox {
-    background-color: #4CAF50;
-    color: white;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
-
 .dropbox:hover, .dropbox:focus {
     background-color: #3e8e41;
 }
 
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px 0px;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  width: 100px; height: 27px; 
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  border-radius: 5px; 
+  background-color: #3a57af;
+  transition: all 0.1s linear 0s; 
+  top: 0px;
+  position: relative;
+  text-align: center;
+}
+
+.div-body 
+{ 
+  background: url(http://www.trbimg.com/img-550aecbf/turbine/sfp-eight-diet-and-exercise-mistakes-that-age--001/1280/1280x720) 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+}
