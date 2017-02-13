@@ -260,4 +260,16 @@ a.button:hover {
   box-shadow: none;
   
 }
-________________________________________
+
+.whole-body {
+  background: url(../Images/Cake.jpg);
+  background-repeat: no-repeat;
+}
+
+.copyright-footer {
+  position:absolute;
+  width:100%;
+  background-color:#000000;
+  overflow:auto;
+  text-align: right;
+}

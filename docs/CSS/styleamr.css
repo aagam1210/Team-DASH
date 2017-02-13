@@ -186,3 +186,16 @@ a.button:hover {
     font-weight: normal;
     font-size: 12px;
 }
+
+.logout-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px 0px;
+  display: inline-block;
+  float: right;
+  border-radius: 5px; 
+  background-color: #3a57af;
+  position: relative;
+  text-align: center;
+}
