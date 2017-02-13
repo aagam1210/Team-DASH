@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+<link rel="stylesheet" href="../CSS/styleamr.css">  
+</head>
+
+<body background="../Images/Strawberry.jpg">
+	<div class="container">		
+		<header>
+		<div style = "float:left"><h2 style = "color: #c6436f;font-weight:bold">Dessert Meter</h2></div>
+		<div style = "float:right;line-height: 70px;font-weight:bold">
+      <input class="logout-button" type="submit" style="width:70px" value="Logout" onclick="window.location='../index.html';" />
+    </div> 
+		<div style="clear:both"></div>
+    </header>  
+  <div>
+    <ul class="topnav" id="myTopnav">
+    <li><a href="#about" style="font-weight:bold">Profile</a></li>
+    <li><a href="#contact" style="font-weight:bold">Trends</a></li>
+    <li><a href="#news" style="font-weight:bold">Foods</a></li>
+    <li><a href="../index.html" style="font-weight:bold">Home</a></li>
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+	</div>
+  <hr>
+ <div class="testbox1">
+ <h1>Profile Information</h1>
+ <div class="form-style-3">
+ <form action="/" style:"left"> 
+   <fieldset><legend>Personal</legend>
+ 				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Name" required/>
+				<label for="email">Email</label>
+              <input type="text" name="email" id="email" placeholder="Email" required/>
+              <label for="age">Age</label>
+              <input type="text" name="age" id="age" placeholder="Age" required/>
+              <label for="phone">Phone Number</label>
+ 			<input type="text" name="phone" id="phone" placeholder="Phone Number" required/>
+ 			<label for="gender">Gender</label>
+ 			<input type="text" name="gender" id="gender" placeholder="Gender" required/>
+ </fieldset>
+   <fieldset><legend>BMI Info</legend>
+           	<label for="Height">Height</label>
+            <input type="text" name="Height" id="Height">
+            <p>ft</p>
+
+            <label for="Weight">Weight</label>
+            <input type="text" name="Weight" id="Weight">
+            <p>lb</p>
+            <label for="CalorieCount">CalorieCount</label>
+            <input type="text" name="CalorieCount" id="CalorieCount">
+      <p>K.cal</p>
+     </fieldset>
+           <a href="#" class="button">Save</a>
+           </form>
+       </div>
+          </div>
+</body>
+</html>  
+</body>
+</html>

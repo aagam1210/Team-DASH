@@ -1,0 +1,151 @@
+#id1 {
+  position: relative;
+  font-size: 35px;
+  font-family: Georgia, serif;
+  color: white;
+}
+.link1 {
+  color: red;
+  position: relative;
+  left: 380px;
+}
+
+.link2 {
+  color: blue;
+  position: relative;
+  left: 380px;
+}
+
+/*.body {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  heigth: 50%;
+}*/
+
+.tail {
+}
+
+#searchBar {
+  border: 1px solid #000000;
+  border-right: none;
+  font-size: 26px;
+  padding: 10px;
+  outline: none;
+  width: 250p;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#searchBtn {
+  border: 1px solid #000000;
+  font-size: 26px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header, footer {
+   padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: left;
+    font-family:Cursive;
+    font-size:20px;
+}
+
+.box {
+  margin: 20px auto;
+  position: relative;
+  top: 150px;
+  left: 70px;
+  width: 443px;
+  height: 620px;
+}
+
+.dropbox {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbox:hover, .dropbox:focus {
+    background-color: #3e8e41;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px 0px;
+  display: inline-block;
+  float: right;
+  /*text-decoration: none;
+  width: 100px; height: 27px; 
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; */
+  border-radius: 5px; 
+  background-color: #3a57af;
+/*  transition: all 0.1s linear 0s; 
+  top: 0px;
+*/  position: relative;
+  text-align: center;
+}
+
+.div-body 
+{ 
+  background: url(http://www.trbimg.com/img-550aecbf/turbine/sfp-eight-diet-and-exercise-mistakes-that-age--001/1280/1280x720) 
+  no-repeat fixed;
+  background.opacity: 0.2;
+  background-size: 100% 100%
+ /* -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; */
+}
+
+.container {
+  background-color:#000000;
+  overflow:auto;
+}
+
+.website-name-div {
+  float:left
+}
+
+.buttons-div {
+  float:right;
+}
+
+.name {
+  color: white;
+  font-family: Platina;
+}
+
+@font-face {
+  font-family: Platina;
+  src: url(../Resources/Planetium-X Regular Demo.otf);
+}
+
+.copyright-footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background-color:#000000;
+  overflow:auto;
+  text-align: right;
+}
