@@ -6,12 +6,14 @@ window.onload = function() {
   pnumber=getQueryVariable("pnumber");
   gender=getQueryVariable("gender");
 
-  document.getElementById('name').value = decodeURI(name);
-  document.getElementById('email').value = email;
-  document.getElementById('age').value = age;
-  document.getElementById('pnumber').value = pnumber;
-  document.getElementById('gender').value = gender;
+  if(!name) {
+    document.getElementById('name').value = decodeURI(name);
+    document.getElementById('email').value = email;
+    document.getElementById('age').value = age;
+    document.getElementById('pnumber').value = pnumber;
+    document.getElementById('gender').value = gender;
 
+  }
 }
 
 function getQueryVariable(variable)

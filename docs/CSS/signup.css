@@ -264,6 +264,7 @@ a.button:hover {
 .whole-body {
   background: url(../Images/Cake.jpg);
   background-repeat: no-repeat;
+  background-size: 1350px 820px;
 }
 
 .copyright-footer {
