@@ -199,3 +199,11 @@ a.button:hover {
   position: relative;
   text-align: center;
 }
+
+.copyright-footer {
+  position:absolute;
+  width:100%;
+  background-color:#000000;
+  overflow:auto;
+  white-space: nowrap;
+}
