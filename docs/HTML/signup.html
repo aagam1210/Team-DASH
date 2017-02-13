@@ -3,6 +3,7 @@
 <head>
   <title>Login/Signup Page</title>
       <link rel="stylesheet" href="../CSS/signup.css">
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
       <script type="text/javascript" src="../JS/signup.js"></script>
 </head>
 
@@ -23,7 +24,7 @@
     <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
-	</div>
+  </div>
 
   <div class="midsection">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
@@ -31,7 +32,7 @@
     <p1>
       <div class="testbox1">
         <h1>Sign-Up</h1>
-        <form>
+        <form action="/">
           <label id="icon" for="name"><i class="icon-user"></i></label>
           <input type="text" name="name" id="name" placeholder="Name" required/>
           <label id="icon" for="name"><i class="icon-envelope "></i></label>
@@ -47,9 +48,9 @@
           <label id="icon" for="name"><i class="icon-shield"></i></label>
           <input type="password" name="repasswd" id="re-passwd" placeholder="Re-type Password" required/>
           <div class="gender">
-            <input type="radio" value="Male" id="gender" checked/>
+            <input type="radio" value="None" id="male" name="gender" checked/>
             <label for="male" class="radio" chec>Male</label>
-            <input type="radio" value="Female" id="gender" />
+            <input type="radio" value="None" id="female" name="gender" />
             <label for="female" class="radio">Female</label>
           </div> 
 
