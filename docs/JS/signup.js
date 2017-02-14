@@ -8,7 +8,8 @@ function validate () {
 	repasswd = document.getElementById('re-passwd').value;
 	var atposition = email.indexOf("@");
 	var dotposition = email.lastIndexOf(".");
-	gender = document.getElementById("gender").value;
+	male = document.getElementById('male');
+  female = document.getElementById('female');
 
 	if(name == "" || email == "" || age == "" || pnumber == "" || uname == "" || passwd == "" || repasswd == "") {
 		alert("Please enter all required fields");
@@ -35,7 +36,7 @@ function validate () {
   		flag=false;
   	}
   	else {
-		var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" +gender;
-  		window.location.href="../HTML/profile.html";
+		var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" + "male";
+  		window.location.href=string_url;
   	}
 }
