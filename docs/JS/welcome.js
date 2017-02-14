@@ -16,6 +16,7 @@ function myD(){
    if(searchBar.value == "Oreo Shake"){
       alert("Your Favourite Dessert is a Oreo Shake. Oreo and Milk Shake - an AWESOME Combination. One glass of Oreo Shake has 1000 Calories. You are gonna regret this. Please SignUp or Login to track your dessert intake.");
     }
-      alert("Your Favourite Dessert is a " + searchBar.value + ". It has 350 calories. Please SignUp or Login to track your dessert intake.");
+   else{ 
+      alert("Your Favourite Dessert is a " + searchBar.value + ". It has 350 calories. Please SignUp or Login to track your dessert intake.");}
   }
 }
