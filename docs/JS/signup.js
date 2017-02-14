@@ -35,13 +35,7 @@ function validate () {
   		flag=false;
   	}
   	else {
-      var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" +gender;
-
-  		// myStorage.setItem("name", name);
-  		// myStorage.setItem("email", email);
-  		// myStorage.setItem("age", age);
-  		// myStorage.setItem("pnumber", pnumber);
-  		// myStorage.setItem("gender", name);
-  		window.location.href=string_url;
+		var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" +gender;
+  		window.location.href="../HTML/profile.html";
   	}
 }
