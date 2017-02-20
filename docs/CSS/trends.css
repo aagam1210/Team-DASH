@@ -1,0 +1,131 @@
+header, footer {
+   padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-family:Cursive;
+    font-size:20px;
+}
+
+
+/* __________Strip with tabs______________*/
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav .icon {display: none;}
+
+_________________________________________
+
+
+
+_________________________________________________
+/*Sign in block*/
+body, div, dl, dt, dd, ul, ol, li, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+  padding:0;
+  margin:0;}
+
+fieldset, img {border:0}
+
+ol, ul, li {list-style:none}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+p1 {
+  display: inline-block;
+  margin-left: 150px; 
+  margin-right: 250px;
+  margin-bottom: -100px;
+}
+
+p2{
+  position: relative;
+  top: -300px; 
+}
+
+p3 {
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 18px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+html{
+  background-color: #ffffff;
+}
+
+.whole-body {
+  background: url(../Images/dessertcover1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px 820px;
+}
+
+.logout-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px;
+  display: inline-block;
+  border-radius: 5px; 
+  background-color: #3a57af;
+  position: relative;
+  text-align: center;
+}
+
+.copyright-footer {
+  position:absolute;
+  width:100%;
+  background-color:#000000;
+  overflow:auto;
+  text-align: right;
+}
+
+.Trends {
+  color:blue;
+  text-align:center;
+}
+
+body{
+  font:13px/1.3 'Lucida Grande',sans-serif;
+  color:#666;
+}
