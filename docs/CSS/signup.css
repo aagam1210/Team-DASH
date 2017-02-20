@@ -274,3 +274,15 @@ a.button:hover {
   overflow:auto;
   text-align: right;
 }
+
+.div-body 
+{ 
+  background: url(../Images/dessertcover1.jpg) 
+  no-repeat fixed;
+  background.opacity: 0.2;
+  background-size: 100% 100%
+ /* -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; */
+}
