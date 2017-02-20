@@ -6,7 +6,7 @@ window.onload = function() {
   pnumber=getQueryVariable("pnumber");
   gender=getQueryVariable("gender");
 
-  if(!name) {
+  if(name != false) {
     document.getElementById('name').value = decodeURI(name);
     document.getElementById('email').value = email;
     document.getElementById('age').value = age;
