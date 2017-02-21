@@ -8,8 +8,8 @@
 
 <body class="whole-body">
 
-	<header>
-      <div style = "float:left"><h2 style = "color: white;font-weight:bold">&nbsp;Dessert Meter</h2></div>
+  <header>
+      <div style = "float:left"><h2 style = "color: white;font-weight:bold">Dessert Meter</h2></div>
       <div style = "float:right;line-height: 70px;font-weight:bold">
         <input class="logout-button" type="submit" style="width:70px" value="Logout" onclick="window.location='../index.html';" />
       </div> 
@@ -20,9 +20,9 @@
   <div>
     <ul class="topnav" id="myTopnav">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="#foods">Foods</a></li>
-    <li><a href="./trends.html">Trends</a></li>
-    <li><a href="./profile.html">Profile</a></li>
+    <li><a href="#news">Foods</a></li>
+    <li><a href="#contact">Trends</a></li>
+    <li><a href="#profile">Profile</a></li>
     <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
@@ -54,19 +54,19 @@
     <p1>
       <div class="testbox1">
         <form>
-          <div class="boxed">Calorie Goal - 1500 KCal</div>
+          <div class="boxed">Calorie Goal - 1000 KCal</div>
               <div class="box">
-  	          <h3 id="id1"> Add Dessert </h3>
-  	          <input list="browsers" class="dropbox"  placeholder="Search.." id="searchBar" autocomplete="off" />
-  	          <input type="button" id="searchBtn" value="&#8594;" onclick="myD()"/>
+              <h3 id="id1"> Add Dessert </h3>
+              <input list="browsers" class="dropbox"  placeholder="Search.." id="searchBar" autocomplete="off" />
+              <input type="button" id="searchBtn" value="&#8594;" onclick="myD()"/>
               </div>
-  	          <datalist id="browsers">
-    	        <option value="Cake">
-    	        <option value="Chocolate Mousse">
-    	        <option value="Tart">
-    	        <option value="Ice Cream">
-    	        <option value="Oreo Shake">
-  	          </datalist>
+              <datalist id="browsers">
+              <option value="Cake">
+              <option value="Chocolate Mousse">
+              <option value="Tart">
+              <option value="Ice Cream">
+              <option value="Oreo Shake">
+              </datalist>
           <div>
           <label class="serving">Serving</label>
           <output class="border-rounded" id = "serving">0</output>
@@ -82,22 +82,8 @@
     <th>Dessert</th>
     <th>Serving</th>
     <th>Calories</th>
-  </tr>
-  <tr>
-    <td>a1</td>
-    <td>b1</td>
-    <td>c1</td>
-  </tr>
-  <tr>
-    <td>a2</td>
-    <td>b2</td>
-    <td>c2</td>
-  </tr>
-  <tr>
-    <td>a3</td>
-    <td>b3</td>
-    <td>c3</td>
-  </tr>
+           </tr></table>
+     <table id="myTable">
 </table>
       </div>
     </p1>

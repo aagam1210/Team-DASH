@@ -72,3 +72,18 @@ function reset() {
         { screen1.innerHTML = "0";}
       screen2 = document.getElementById("servingcalories");
         { screen2.innerHTML = "0 KCal";}}false};
+
+function addserv(){
+  screen1 = document.getElementById("serving");
+  screen2 = document.getElementById("servingcalories");
+  screen = document.getElementById("searchBar"); 
+var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell11 = row.insertCell(0);
+    var cell12 = row.insertCell(1);
+    var cell13 =row.insertCell(2);
+    cell11.innerHTML = screen.value;
+    cell12.innerHTML = screen1.innerHTML;
+    cell13.innerHTML =screen2.innerHTML;
+}
+
