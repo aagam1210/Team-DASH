@@ -113,16 +113,12 @@ html{
 }
 
 .copyright-footer {
-  position:absolute;
+  position:fixed;
+  bottom:0;
   width:100%;
   background-color:#000000;
   overflow:auto;
   text-align: right;
-}
-
-.Trends {
-  color:blue;
-  text-align:center;
 }
 
 body{
