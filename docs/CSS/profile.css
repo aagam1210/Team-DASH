@@ -1,7 +1,7 @@
 header, footer {
     color: #f29871;
     font-type: bold;
-    background-color: #efc2d1;
+    background-color: #000000;
     clear: left;
     text-align: left;
     font-family: Cursive;
@@ -25,7 +25,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f9f1b1;
+    background-color: #333;
 }
 
 /* Float the list items side by side */
@@ -34,7 +34,7 @@ ul.topnav li {float: left;}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color: #f29871;
+    color: white;
     text-align: centre;
     padding: 10px 50px;
     text-decoration: none;
@@ -43,8 +43,8 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #e5f271;}
-
+/*ul.topnav li a:hover {background-color: #e5f271;}
+*/
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
 
@@ -113,7 +113,7 @@ input[type=text]{
     -moz-border-radius: 3px;
     border: 1px solid #FFC2DC;
     outline: none;
-    color: #F072A9;
+  /*  color: #F072A9;*/
     padding: 5px 8px 5px 8px;
     box-shadow: inset 1px 1px 4px #FFD5E7;
     -moz-box-shadow: inset 1px 1px 4px #FFD5E7;
@@ -163,18 +163,18 @@ a.button:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     margin: 0px 0px 10px 0px;
-    border: 1px solid #FFD2D2;
+    border: 1px solid;
     padding: 20px;
     background: #FFF4F4;
-    box-shadow: inset 0px 0px 15px #FFE5E5;
-    -moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+    box-shadow: inset 0px 0px 15px;
+    -moz-box-shadow: inset 0px 0px 15px;
     -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
 }
 .form-style-3 fieldset legend{
-    color: #FFA0C9;
-    border-top: 1px solid #FFD2D2;
-    border-left: 1px solid #FFD2D2;
-    border-right: 1px solid #FFD2D2;
+    color: black;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
     border-radius: 5px 5px 0px 0px;
     -webkit-border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
@@ -206,4 +206,16 @@ a.button:hover {
   background-color:#000000;
   overflow:auto;
   white-space: nowrap;
+}
+
+.div-body 
+{ 
+  background: url(../Images/dessertcover1.jpg) 
+  no-repeat fixed;
+  background.opacity: 0.2;
+  background-size: 100% 100%
+ /* -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; */
 }

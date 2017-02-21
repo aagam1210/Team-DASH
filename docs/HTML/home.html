@@ -1,0 +1,95 @@
+<html >
+<head>
+  <title>Home Page</title>
+      <link rel="stylesheet" href="../CSS/home.css">
+      <script src="https://use.fontawesome.com/568a9a0dd4.js"></script>
+      <script type="text/javascript" src="../JS/home.js"></script>
+</head>
+
+<body class="whole-body">
+
+  <header>
+      <div style = "float:left"><h2 style = "color: white;font-weight:bold">Dessert Meter</h2></div>
+      <div style = "float:right;line-height: 70px;font-weight:bold">
+        <input class="logout-button" type="submit" style="width:70px" value="Logout" onclick="window.location='../index.html';" />
+      </div> 
+
+      <div style="clear:both"></div>
+    </header> 
+
+  <div>
+    <ul class="topnav" id="myTopnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="#news">Foods</a></li>
+    <li><a href="#contact">Trends</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+  </div>
+
+  <div class="midsection">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <div class="calender">
+  <ul class="month">
+    <li>
+      <h1>January</h1>
+      <h2>2016</h2>
+    </li>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </ul>
+  <ul class="weeks">
+    <li>Sa</li>
+    <li>Su</li>
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+  </ul>
+  <ul class="days">
+  </ul>
+</div>
+    <p1>
+      <div class="testbox1">
+        <form>
+          <div class="boxed">Calorie Goal - 1000 KCal</div>
+              <div class="box">
+              <h3 id="id1"> Add Dessert </h3>
+              <input list="browsers" class="dropbox"  placeholder="Search.." id="searchBar" autocomplete="off" />
+              <input type="button" id="searchBtn" value="&#8594;" onclick="myD()"/>
+              </div>
+              <datalist id="browsers">
+              <option value="Cake">
+              <option value="Chocolate Mousse">
+              <option value="Tart">
+              <option value="Ice Cream">
+              <option value="Oreo Shake">
+              </datalist>
+          <div>
+          <label class="serving">Serving</label>
+          <output class="border-rounded" id = "serving">0</output>
+          <label class="serving">Dessert Calories</label>
+          <output class="border-rounded" id = "servingcalories">0 KCal</output></div>
+          <div class = "servingbutton">
+           <a onclick="reset()" class="button">RESET</a>
+           <a onclick="addserv()" class="button">ADD SERVING</a>                 
+          </div>
+          </form>  
+         <table>
+  <tr>
+    <th>Dessert</th>
+    <th>Serving</th>
+    <th>Calories</th>
+           </tr></table>
+     <table id="myTable">
+</table>
+      </div>
+    </p1>
+
+<div class="copyright-footer">
+<p><b>&copy; 2017 Team DASH - HCI. ALL RIGHTS RESERVED &nbsp;&nbsp;</b></p>
+    </div>
+</body>
+</html>
