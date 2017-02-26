@@ -67,7 +67,7 @@ select {
 
 p1 {
   display: inline-block;
-  margin-left: 310px; 
+  margin-left: 160px; 
   margin-right: 250px;
 }
 
@@ -80,8 +80,8 @@ html{
   display: inline-block;
   margin: 50px auto;
   text-align: center;
-  width: 650px; 
-  height: 500px; 
+  width: 950px; 
+  height: 820px; 
   -webkit-border-radius: 8px/7px; 
   -moz-border-radius: 8px/7px; 
   border-radius: 8px/7px; 
@@ -147,7 +147,7 @@ a.button {
   font-size: 14px;
   font-weight: 400;
   color: white;
-  padding: 6px 25px 20px 20px;
+  padding: 17px 25px 20px 20px;
   margin: 10px 8px 20px 10px;
   display: inline-block;
   float: center;
@@ -161,9 +161,9 @@ a.button {
   -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
   box-shadow: 0 3px rgba(58,87,175,.75);
   transition: all 0.1s linear 0s; 
-  top: 0px;
   position: relative;
-  margin-top: 30px;
+  margin-top:-65px;
+  margin-right: 150px; 
 }
 
 a.button:hover {
@@ -174,9 +174,6 @@ a.button:hover {
   box-shadow: none;  
 }
 
-.servingbutton {
-   margin-right: 160px; 
-}
 
 .whole-body {
   background: url(https://raw.githubusercontent.com/aagam1210/Team-DASH/master/docs/Images/dessertcover1.jpg);
@@ -205,57 +202,6 @@ ul{
 li:not(:first-child){
   cursor: pointer;
 }
-.calender{
-  width: 30%;
-  margin: auto;
-  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
-}
-.calender .month{
-  background-color: #1fd16a;
-  padding: 2px;
-  color: #302f2f;
-  width: 100%;
-  position: relative;
-}
-.calender .month .next,.calender .month .prev{
-  position: absolute;
-  top: calc(100% - 75px);
-  cursor: pointer;
-  padding: 5px;
-  display: block;
-}
-.calender .month .prev{
-  left: 5px;
-}
-.calender .month .next{
-  right: 5px;
-}
-.calender .month .next:hover,.calender .month .prev:hover{
-  background-color: rgba(0,0,0,.2);
-}
-.calender .weeks{display: flex;}
-.calender .weeks li{
-  background-color: #bdc3c7;
-  flex: 1;
-  opacity: .5;
-  position: relative;
-  animation: motion 2s;
-  padding: 10px; 
-}
-.calender .weeks li:hover{background-color: rgba(0,0,0,.2);}
-
-.calender .days {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.calender .days li{
-  flex-basis: calc(100% / 7);
-  padding: 10px 0;
-  opacity: .6;
-  background-color: #bdc3c7;
-}
-.calender .days li:hover{background-color: rgba(0,0,0,.3);}
 
 /*_____Goal Calorie box__________*/
 
@@ -474,3 +420,43 @@ td, th {
 }
 
 /*________________*/
+
+
+
+/*_______InfoBox_________*/
+.infobox {
+  background-color:white;
+  color:white;
+  padding:20px;
+  margin-left: 30px; 
+  margin-right: 30px;
+  height: 600px;
+}
+
+.image{
+  width:200px;
+  display: inline-block;
+  height:150px;
+  float: left;
+  flex-wrap: wrap;
+  
+}
+
+.textinfo{
+  color:black;
+  display: inline-block;
+  margin-top: -150px; 
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  padding: 0 20px 20px 0;
+  margin-left: 210px; 
+  margin-right: 100px; 
+  text-align: justify;
+}
+
+.calorieinfo{
+  margin-left: 760px; 
+  color:black;
+  padding-bottom: 170px;
+  font-weight: bold;
+}
