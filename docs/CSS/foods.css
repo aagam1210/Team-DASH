@@ -1,0 +1,462 @@
+header, footer {
+   padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-family:Cursive;
+    font-size:20px;
+}
+
+
+/* __________Strip with tabs______________*/
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+_________________________________________
+
+
+
+_________________________________________________
+/*Sign in block*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+  padding:0;
+  margin:0;}
+
+fieldset, img {border:0}
+
+ol, ul, li {list-style:none}
+
+:focus {outline:none}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+p1 {
+  display: inline-block;
+  margin-left: 160px; 
+  margin-right: 250px;
+}
+
+html{
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.testbox1 {
+  display: inline-block;
+  margin: 50px auto;
+  text-align: center;
+  width: 950px; 
+  height: 820px; 
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: #FFE5CC; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  border: solid 2px #cbc9c9;
+}
+
+form{
+  margin: 0 30px;
+  text-align: center;
+}
+
+hr{
+  color: #a9a9a9;
+  opacity: 0.3;
+}
+
+input[type=text],input[type=password]{
+  width: 200px; 
+  height: 39px; 
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px; 
+  padding-left: 10px;
+}
+
+input[type=password]{
+  margin-bottom: 0px;
+}
+
+#icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 0px 8px 15px;
+  margin-left: 15px;
+  -webkit-border-radius: 4px 0px 0px 4px; 
+  -moz-border-radius: 4px 0px 0px 4px; 
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+.accounttype{
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+a.button {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 17px 25px 20px 20px;
+  margin: 10px 8px 20px 10px;
+  display: inline-block;
+  float: center;
+  text-decoration: none;
+  width: 100px; height: 50px; 
+  -webkit-border-radius: 10px; 
+  -moz-border-radius: 10px; 
+  border-radius: 10px; 
+  background-color: #3a57af; 
+  -webkit-box-shadow: 3px 3px rgba(58,87,175,.75); 
+  -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
+  box-shadow: 0 3px rgba(58,87,175,.75);
+  transition: all 0.1s linear 0s; 
+  position: relative;
+  margin-top:-65px;
+  margin-right: 150px; 
+}
+
+a.button:hover {
+  top: 1px;
+  background-color:#2e458b;
+  -webkit-box-shadow: none; 
+  -moz-box-shadow: none; 
+  box-shadow: none;  
+}
+
+
+.whole-body {
+  background: url(https://raw.githubusercontent.com/aagam1210/Team-DASH/master/docs/Images/dessertcover1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px 820px;
+}
+
+.copyright-footer {
+  position: relative;
+  width: 100%;
+  background-color:#000000;
+  overflow: auto;
+  text-align: right;
+  bottom: 0;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+li:not(:first-child){
+  cursor: pointer;
+}
+
+/*_____Goal Calorie box__________*/
+
+.boxed {
+  border: 3px solid green ;
+  font-family: arial, sans-serif;
+  font-size:30px;
+}
+/*_______________*/
+
+/*_______Search box CSS________________*/
+#id1 {
+  position: relative;
+  font-size: 30px;
+  font-family: Cursive;
+  color: solid #000000;
+}
+.link1 {
+  color: red;
+  position: relative;
+  left: 380px;
+}
+
+.link2 {
+  color: blue;
+  position: relative;
+  left: 380px;
+}
+
+/*.body {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  heigth: 50%;
+}*/
+
+.tail {
+}
+
+#searchBar {
+  border: 1px solid #000000;
+  border-right: none;
+  font-size: 26px;
+  padding: 10px;
+  outline: none;
+  width: 250p;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#searchBtn {
+  border: 1px solid #000000;
+  font-size: 26px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header, footer {
+   padding: 1px;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: left;
+    font-family:Cursive;
+    font-size:20px;
+}
+
+.box {
+  margin: 20px auto;
+  position: relative;
+  top: 10px;
+  width: 443px;
+}
+
+.dropbox {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbox:hover, .dropbox:focus {
+    background-color: #3e8e41;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px 10px;
+  display: inline-block;
+  float: right;
+  /*text-decoration: none;
+  width: 100px; height: 27px; 
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; */
+  border-radius: 5px; 
+  background-color: #3a57af;
+/*  transition: all 0.1s linear 0s; 
+  top: 0px;
+*/  position: relative;
+  text-align: center;
+  
+}
+
+.div-body 
+{ 
+  background: url(../Images/dessertcover1.jpg) 
+  no-repeat fixed;
+  background.opacity: 0.2;
+  background-size: 100% 100%
+ /* -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; */
+}
+
+.container {
+  background-color:#000000;
+  overflow:auto;
+}
+
+.website-name-div {
+  float:left
+}
+
+.buttons-div {
+  float:right;
+}
+
+.name {
+  color: white;
+  font-family:Cursive;
+}
+
+@font-face {
+  font-family: Platina;
+  src: url(../Resources/Planetium-X Regular Demo.otf);
+}
+
+.copyright-footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background-color:#000000;
+  overflow:auto;
+  text-align: right;
+}
+
+/*_____________________________*/
+
+/*__________Serving______*/
+.serving
+{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: centre;
+  margin-left: 50px;
+  font-family: arial, sans-serif;}
+
+.border-rounded {
+  border-radius: 5px;
+  font-weight: 600;
+  border: 1px solid #000000;
+  background: white;
+  color: #666;
+  font-family: arial, sans-serif;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 14px;
+  text-align: center;
+  width: 90px;
+  margin-top: 10px;
+}
+/*__________Table______*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout:fixed;
+    width: 100%;
+}
+
+td, th {
+    border: 2px solid;
+    text-align: centre;
+    padding: 8px;
+}
+
+.logout-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 10px 8px 10px 0px;
+  display: inline-block;
+  float: right;
+  border-radius: 5px; 
+  background-color: #3a57af;
+  position: relative;
+  text-align: center;
+}
+
+/*________________*/
+
+
+
+/*_______InfoBox_________*/
+.infobox {
+  background-color:white;
+  color:white;
+  padding:20px;
+  margin-left: 30px; 
+  margin-right: 30px;
+  height: 600px;
+}
+
+.image{
+  width:200px;
+  display: inline-block;
+  height:150px;
+  float: left;
+  flex-wrap: wrap;
+  
+}
+
+.textinfo{
+  color:black;
+  display: inline-block;
+  margin-top: -150px; 
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  padding: 0 20px 20px 0;
+  margin-left: 210px; 
+  margin-right: 100px; 
+  text-align: justify;
+}
+
+.calorieinfo{
+  margin-left: 760px; 
+  color:black;
+  padding-bottom: 170px;
+  font-weight: bold;
+}
