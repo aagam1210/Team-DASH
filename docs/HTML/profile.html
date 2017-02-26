@@ -1,69 +1,69 @@
 <html>
 <head>
   <title>Profile</title>
-  <link rel="stylesheet" href="../CSS/profile.css"> 
-  <script type="text/javascript" src="../JS/profile.js"></script>
+      <link rel="stylesheet" href="../CSS/profile.css">
+      <script src="https://use.fontawesome.com/568a9a0dd4.js"></script>
+      <script type="text/javascript" src="../JS/profile.js"></script>
 </head>
 
 <body class="div-body">
-	
-		<header>
-      <div style = "float:left;"><h2 style = "color:white;font-weight:bold">&nbsp;Dessert Meter</h2></div>
-      <div style = "float:right;line-height: 70px;font-weight:bold">
+    <header style="color:white">
+		<h1 style = "color: white; float: left">&nbsp;DESSERT METER</h1>
+	<div style = "float:right;line-height: 70px;font-weight:bold">
         <input class="logout-button" type="submit" style="width:70px" value="Logout" onclick="window.location='../index.html';" />
-      </div> 
+    </div> 
+      <div style="clear:both"></div>  
+	</header>
+  
+  <div>
+    <ul class="topnav" id="myTopnav">
+    <li><a href="./home.html">Home</a></li>
+    <li><a href="#news">Food</a></li>
+    <li><a href="./trends.html">Trends</a></li>
+    <li><a href="#about">Profile</a></li>
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+  </div>
 
-      <div style="clear:both"></div>
-    </header> 
-
-    <div>
-      <ul class="topnav" id="myTopnav">
-        <li><a href="./home.html" style="font-weight:bold">Home</a></li>
-        <li><a href="#foods" style="font-weight:bold">Foods</a></li>
-        <li><a href="#profile" style="font-weight:bold">Profile</a></li>
-        <li><a href="./trends.html" style="font-weight:bold">Trends</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-    </div>
-
-    <div class="testbox1">
-      <h1>Profile Information</h1>
-      <div class="form-style-3">
-        <form action="/" style:"left"> 
-          <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name" required/>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Email" required/>
-            <label for="age">Age</label>
-            <input type="text" name="age" id="age" placeholder="Age" required/>
-            <label for="phone">Phone Number</label>
-            <input type="text" name="phone" id="pnumber" placeholder="Phone Number" required/>
-            <label for="gender">Gender</label>
-            <input type="text" name="gender" id="gender" placeholder="Gender" required/>
-          </fieldset>
-
-          <fieldset><legend>BMI Info</legend>
-            <label for="Height">Height</label>
-            <input type="text" name="Height" id="Height">
-            <p>ft</p>
-            <label for="Weight">Weight</label>
-            <input type="text" name="Weight" id="Weight">
-            <p>lb</p>
-            <label for="CalorieCount">CalorieCount</label>
-            <input type="text" name="CalorieCount" id="CalorieCount">
-            <p>K.cal</p>
-          </fieldset>
-          <a href="./home.html" class="button">Save</a>
+  <div class="midsection">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <p1>
+      <div class="testbox1">
+        <h2>Profile Information</h2>
+        <form action="/">
+          <label id="icon" for="name"><i class="fa fa-user"></i></label>
+          <input type="text" name="name" id="name" placeholder="Name" required/>
+          <label id="icon" for="name"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></label>
+          <input type="text" name="email" id="email" placeholder="Email" required/>
+          <label id="icon" for="name"><i class="fa fa-user"></i></label>
+          <input type="text" name="age" type="number" id="age" placeholder="Age" required/>
+          <label id="icon" for="name"><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i></label>
+          <input type="text" name="phone" id="pnumber" placeholder="Phone Number" required/>
+          <label id="icon" for="name"><i class="fa fa-user"></i></label>
+          <input type="text" name="gender" id="gender" placeholder="Gender" required/>
         </form>
       </div>
-    </div>
+    </p1>
 
-     <div class="copyright-footer">
-      <p><b>&copy; 2017 Team DASH - HCI. ALL RIGHTS RESERVED</b></p>
+    <p2>
+      <div class="testbox2">
+        <h2>BMI Information</h2>
+        <form action="/">
+          <label id="icon" for="name"><i class="fa fa-shield fa-fw"></i></label>
+          <input type="text" name="Height" id="Height" placeholder="Height" required/> <b>ft</b>
+          <label id="icon" for="name"><i class="fa fa-shield fa-fw"></i></label>
+          <input type="text" name="Weight" id="Weight" placeholder="Weight" required/> <b>lb</b>
+		  <label id="icon" for="name"><i class="fa fa-shield fa-fw"></i></label>
+          <input type="text" style= "background-color: lightgray" name="CalorieCount" id="CalorieCount" placeholder="CalorieCount" readonly/> <b>Kcal</b>
+          <a onclick="validate()" class="button">Save</a>
+        </form>
+      </div>
+    </p2>
+  </div>
+	<div class="copyright-footer">
+		<p>&copy; 2017 Team DASH - HCI. ALL RIGHTS RESERVED</p>
     </div>
-
 
 </body>
 </html>
