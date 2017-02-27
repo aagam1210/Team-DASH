@@ -77,7 +77,8 @@ function addserv(){
   screen1 = document.getElementById("serving");
   screen2 = document.getElementById("servingcalories");
   screen = document.getElementById("searchBar"); 
-var table = document.getElementById("myTable");
+    var table = document.getElementById("myTable");
+    if(screen1.innerHTML!= "0"){
     var row = table.insertRow(0);
     var cell11 = row.insertCell(0);
     var cell12 = row.insertCell(1);
@@ -85,5 +86,6 @@ var table = document.getElementById("myTable");
     cell11.innerHTML = screen.value;
     cell12.innerHTML = screen1.innerHTML;
     cell13.innerHTML =screen2.innerHTML;
+    }
 }
 
