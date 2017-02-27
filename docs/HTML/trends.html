@@ -38,16 +38,16 @@
       <div id="chartContainer" class="chart"></div>
     
       <div class = "radio-buttons">
-        <input type="radio" id="r1" name="chart select" checked="checked"/>
-        <label for="r1"><span></span>Dessert Intake</label>
+        <input type="radio" id="r1" name="chart select" onchange="selectChart();" value="dessert" checked="checked"/>
+        <label for="r1"><span></span>Daily Dessert Intake</label>
         <br><br>
-        <input type="radio" id="r2" name="chart select" />
-        <label for="r2"><span></span>BMI</label>
+        <input type="radio" id="r2" name="chart select" onchange="selectChart();" value="bmi" />
+        <label for="r2"><span></span>Monthly BMI</label>
       </div>
 
       <div>
         <br>
-        <p> Last 5 desserts eaten: </p>
+        <p> Last 3 desserts eaten: </p>
       </div>
       <div class="slider">
         <label for="id1">
@@ -56,14 +56,8 @@
         <label for="id2">
           <img src="../Images/Chocolate Mousse.jpg" height="75" width="120"/>
         </label>
-        <label for="id3">
-          <img src="../Images/fruity-milk-jellies.jpg" height="75" width="120"/>
-        </label>
         <label for="id4">
           <img src="../Images/Strawberry.jpg" height="75" width="120"/>
-        </label>
-        <label for="id5">
-          <img src="../Images/Valentines-Day-Heart-Cupcakes.jpg" height="75" width="120"/>
         </label>
       </div>
     </div>

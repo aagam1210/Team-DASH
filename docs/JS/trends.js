@@ -1,8 +1,18 @@
 window.onload = function () {
-	dessertChart();
+	selectChart();
 }
 
+var radio = document.getElementByName('chart select');
 
+function selectChart(){
+	if (document.getElementById('r1').checked) {
+		dessertChart();
+	}
+	else{
+		alert
+		dessertBMI();
+	};
+}
 
 function dessertChart(){
 	var chartDessert = new CanvasJS.Chart("chartContainer", { 
@@ -43,7 +53,7 @@ function dessertBMI(){
 			xValueType: "dateTime"	
 		},
 		axisY: {
-			title: "Weight"
+			title: "Weight (lbs)"
 		},
 		data: [
 		{
@@ -55,8 +65,8 @@ function dessertBMI(){
 				  { x: new Date(2017, 02, 1), y: 188 },
 				  { x: new Date(2017, 03, 1), y: 185 },
 				  { x: new Date(2017, 04, 1), y: 180 },
-				  { x: new Date(2017, 05, 1), y: 178 },
-				  { x: new Date(2017, 06, 1), y: 175 },
+				  { x: new Date(2017, 05, 1), y: 187 },
+				  { x: new Date(2017, 06, 1), y: 190 },
 			]
 		}
 		]
