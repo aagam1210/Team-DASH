@@ -6,7 +6,14 @@ window.onload = function() {
   pnumber=getQueryVariable("pnumber");
   gender=getQueryVariable("gender");
 
-  if(name != false) {
+  if(window.location.search.length == 0 ) {
+    document.getElementById('name').value = "Lionel Messi";
+    document.getElementById('email').value = "me@leomessi.com";
+    document.getElementById('age').value = "29";
+    document.getElementById('pnumber').value = "301456999";
+    document.getElementById('gender').value = "Male";
+  }
+  else{
     document.getElementById('name').value = decodeURI(name);
     document.getElementById('email').value = email;
     document.getElementById('age').value = age;
