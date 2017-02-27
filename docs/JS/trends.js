@@ -1,30 +1,3 @@
-/* window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer", {
-		title: {
-			text: "Calorie Count"
-		},
-		axisX: {
-			xValueType: "dateTime"
-			
-		},
-		dataPointWidth: 60,
-		data: [{
-			type: "column",
-			indexLabelLineThickness: 2,
-			dataPoints: [
-				  { x: new Date(2017, 01, 19), y: 230},
-				  { x: new Date(2017, 01, 20), y: 710 },
-				  { x: new Date(2017, 01, 21), y: 380 },
-				  { x: new Date(2017, 01, 22), y: 567 },
-				  { x: new Date(2017, 01, 23), y: 280 },
-				  { x: new Date(2017, 01, 24), y: 507 },
-				  { x: new Date(2017, 01, 25), y: 680 },
-			]
-		}]
-	});
-	chart.render();
-} */
-
 window.onload = function () {
 	var chart = new CanvasJS.Chart("chartContainer", { 
 		title: {
@@ -71,4 +44,9 @@ window.onload = function () {
 	chart.render();
 
 	});
+
+
+
+
+
 }
