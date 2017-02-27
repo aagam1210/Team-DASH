@@ -87,5 +87,8 @@ function addserv(){
     cell12.innerHTML = screen1.innerHTML;
     cell13.innerHTML =screen2.innerHTML;
     }
+    else{
+    alert("Please click on Search");
+  }
 }
 
