@@ -1,5 +1,11 @@
 window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer", { 
+	dessertChart();
+}
+
+
+
+function dessertChart(){
+	var chartDessert = new CanvasJS.Chart("chartContainer", { 
 		title: {
 			text: "Calorie Consumption Chart"
 		},
@@ -25,28 +31,36 @@ window.onload = function () {
 		}
 		]
 	});
-	chart.render();	
-
-	$("#addDataPoint").click(function () {
-
-	var length = chart.options.data[0].dataPoints.length;
-	chart.options.title.text = "New DataPoint Added at the end";
-	chart.options.data[0].dataPoints.push({ y: 25 - Math.random() * 10});
-	chart.render();
-
-	});
-
-	$("#updateDataPoint").click(function () {
-
-	var length = chart.options.data[0].dataPoints.length;
-	chart.options.title.text = "Last DataPoint Updated";
-	chart.options.data[0].dataPoints[length-1].y = 15 - Math.random() * 10;
-	chart.render();
-
-	});
-
-
-
-
-
+	chartDessert.render();
 }
+
+function dessertBMI(){
+	var chartBMI = new CanvasJS.Chart("chartContainer", { 
+		title: {
+			text: "Monthly BMI Tracking"
+		},
+		axisX: {
+			xValueType: "dateTime"	
+		},
+		axisY: {
+			title: "Weight"
+		},
+		data: [
+		{
+			type: "column",
+			indexLabelLineThickness: 2,
+			dataPoints: [
+				  { x: new Date(2017, 00, 1), y: 198 },
+				  { x: new Date(2017, 01, 1), y: 190 },
+				  { x: new Date(2017, 02, 1), y: 188 },
+				  { x: new Date(2017, 03, 1), y: 185 },
+				  { x: new Date(2017, 04, 1), y: 180 },
+				  { x: new Date(2017, 05, 1), y: 178 },
+				  { x: new Date(2017, 06, 1), y: 175 },
+			]
+		}
+		]
+	});
+	chartBMI.render();
+}
+
