@@ -6,7 +6,7 @@ window.onload = function() {
   pnumber=getQueryVariable("pnumber");
   gender=getQueryVariable("gender");
 
-  if(name != false) {
+  if(window.location.search.length == 0 ) {
     document.getElementById('name').value = "Lionel Messi";
     document.getElementById('email').value = "me@leomessi.com";
     document.getElementById('age').value = "29";
