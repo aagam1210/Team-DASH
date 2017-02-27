@@ -65,20 +65,28 @@ document.getElementById("searchBar");
 
 
 function reset() {
-  screen = document.getElementById("searchBar"); 
-    if(searchBar.value){
-      searchBar.value = screen.innerHTML ="";
-      screen1 = document.getElementById("serving");
-        { screen1.innerHTML = "0";}
-      screen2 = document.getElementById("servingcalories");
-        { screen2.innerHTML = "0 KCal";}}false};
+screen = document.getElementById("searchBar"); 
+if(searchBar.value){
+searchBar.value = screen.innerHTML ="";
+screen1 = document.getElementById("serving");
+{screen1.innerHTML = "0";}
+screen2 = document.getElementById("servingcalories");
+{screen2.innerHTML = "0 KCal";}
+} 
+var tbl = document.getElementById("myTable");
+lastRow = tbl.rows.length - 1; // set the last row index
+  for (i = lastRow; i > -1; i--) {
+  tbl.deleteRow(i);  //delete the row 
+ }
+}
 
 function addserv(){
   screen1 = document.getElementById("serving");
   screen2 = document.getElementById("servingcalories");
   screen = document.getElementById("searchBar"); 
-    var table = document.getElementById("myTable");
-    if(screen1.innerHTML!= "0"){
+  var table = document.getElementById("myTable");
+    
+  if(screen1.innerHTML!= "0" && table.rows.length < 3){
     var row = table.insertRow(0);
     var cell11 = row.insertCell(0);
     var cell12 = row.insertCell(1);
@@ -87,8 +95,10 @@ function addserv(){
     cell12.innerHTML = screen1.innerHTML;
     cell13.innerHTML =screen2.innerHTML;
     }
-    else{
+  else if(screen1.innerHTML == 0) {
     alert("Please click on Search");
   }
+  else {
+    alert("More than 3 deserts a day does not keep a doctor away!!!")
+  }
 }
-
