@@ -271,7 +271,7 @@ a.button:hover {
 }
 
 .whole-body {
-  background: url(../Images/dessertcover1.jpg);
+  background: url(../Images/Background1.jpg);
   background-repeat: no-repeat;
   background-size: 1350px 820px;
 }
@@ -286,7 +286,7 @@ a.button:hover {
 
 .div-body 
 { 
-  background: url(../Images/dessertcover1.jpg) 
+  background: url(../Images/Background1.jpg) 
   no-repeat fixed;
   background.opacity: 0.2;
   background-size: 100% 100%

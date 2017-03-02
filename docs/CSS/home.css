@@ -179,7 +179,7 @@ a.button:hover {
 }
 
 .whole-body {
-  background: url(https://raw.githubusercontent.com/aagam1210/Team-DASH/master/docs/Images/dessertcover1.jpg);
+  background: url(../Images/Background1.jpg);
   background-repeat: no-repeat;
   background-size: 1350px 820px;
 }
@@ -377,7 +377,7 @@ header, footer {
 
 .div-body 
 { 
-  background: url(../Images/dessertcover1.jpg) 
+  background: url(../Images/Background1.jpg) 
   no-repeat fixed;
   background.opacity: 0.2;
   background-size: 100% 100%
