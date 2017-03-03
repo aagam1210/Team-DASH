@@ -19,7 +19,6 @@ lastDayOfMonth = new Date(new Date(new Date().setMonth(monthes + 1)).setDate(0))
     x,
     counter;
 function days(x) {
-  'use strict';
   dayItems.innerHTML = "";
   monthes = monthes + x;
 
