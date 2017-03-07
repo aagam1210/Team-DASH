@@ -452,7 +452,7 @@ td {
   border-radius:8px 8px 0px 0px;
   background-color: white;
   padding: 2px;
-  float: left;
+  float: center;
   margin: 10px auto;
     /*background-color: #FFCC00;*/
 }
