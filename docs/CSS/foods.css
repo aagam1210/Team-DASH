@@ -176,7 +176,7 @@ a.button:hover {
 
 
 .whole-body {
-  background: url(https://raw.githubusercontent.com/aagam1210/Team-DASH/master/docs/Images/dessertcover1.jpg);
+  background: url(../Images/Background1.jpg);
   background-repeat: no-repeat;
   background-size: 1350px 820px;
 }
@@ -263,6 +263,7 @@ li:not(:first-child){
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  margin: -4px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -moz-border-radius-topright: 10px;
@@ -322,7 +323,7 @@ header, footer {
 
 .div-body 
 { 
-  background: url(../Images/dessertcover1.jpg) 
+  background: url(../Images/Background1.jpg) 
   no-repeat fixed;
   background.opacity: 0.2;
   background-size: 100% 100%

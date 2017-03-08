@@ -12,6 +12,9 @@ window.onload = function() {
     document.getElementById('age').value = "29";
     document.getElementById('pnumber').value = "301456999";
     document.getElementById('gender').value = "Male";
+    document.getElementById('Height').value = "5";
+    document.getElementById('Weight').value = "160";
+    document.getElementById('CalorieCount').value = "1300";
   }
   else{
     document.getElementById('name').value = decodeURI(name);
@@ -36,7 +39,7 @@ function getQueryVariable(variable)
 function validate () {
 	name = document.getElementById('name').value;
 	email = document.getElementById('email').value;
-	pnumber = document.getElementById('pnumber').value;
+	pnumber = document.getElementById('pnumber').value.parseInt();
 	age = document.getElementById('age').value;
 	gender = document.getElementById('gender').value;
 	Height = document.getElementById('Height').value;
@@ -75,6 +78,7 @@ function validate () {
 		else if(BMI > 25) 
 			document.getElementById('CalorieCount').value = "1000";
 		CC = document.getElementById('CalorieCount').value;
+    alert("Saved");
 	}
   	
 /* 	var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" + gender + "&Height=" + Height + "&Weight=" + Weight + "&CalorieCount=" + CC;

@@ -1,71 +1,312 @@
-var calender = document.querySelector(".calender"),
-topDiv = document.querySelector('.month'),
-monthDiv = calender.querySelector("h1"),
-yearDiv = calender.querySelector('h2'),
-weekDiv = calender.querySelector(".weeks"),
-dayNames = weekDiv.querySelectorAll("li"),
-dayItems = calender.querySelector(".days"),
-prev = calender.querySelector(".prev"),
-next = calender.querySelector(".next"),
+var Calendar = function(o) {
+  //Store div id
+  this.divId = o.ParentID;
 
-years = new Date().getFullYear(),
-    monthes = new Date(new Date().setFullYear(years)).getMonth(),
-lastDayOfMonth = new Date(new Date(new Date().setMonth(monthes + 1)).setDate(0)).getDate(),
-    dayOfFirstDateOfMonth = new Date(new Date(new Date().setMonth(monthes)).setDate(1)).getDay(),
- monthNames = ["January", "February", "March", "April", "May", "June",
-                  "July", "August", "September", "October", "November", "December"],
-    colors = ['#FFA549', '#F7FFA0', '#1DABB8', '#953163', '#E7DF86', '#E01931', '#92F22A', '#FEC606', '#563D28', '#9E58DC', '#48AD01', '#0EBB9F'],
-    i,
-    x,
-    counter;
-function days(x) {
-  'use strict';
-  dayItems.innerHTML = "";
-  monthes = monthes + x;
+  // Days of week, starting on Sunday
+  this.DaysOfWeek = o.DaysOfWeek;
 
-  if (monthes > 11) {
-    years = years + 1;
-    monthes = new Date(new Date(new Date().setFullYear(years)).setMonth(0)).getMonth();
+  console.log("this.DaysOfWeek == ", this.DaysOfWeek)
+
+  // Months, stating on January
+  this.Months = o.Months;
+
+  console.log("this.Months == ", this.Months)
+
+  // Set the current month, year
+  var d = new Date();
+
+  console.log("d == ", d)
+
+  this.CurrentMonth = d.getMonth();
+
+  console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+  this.CurrentYear = d.getFullYear();
+
+  console.log("this.CurrentYear == ", this.CurrentYear);
+
+  var f=o.Format;
+
+  console.log("o == ", o);
+
+  console.log("f == ", f);
+
+  //this.f = typeof(f) == 'string' ? f.charAt(0).toUpperCase() : 'M';
+
+  if(typeof(f) == 'string') {
+    this.f  = f.charAt(0).toUpperCase();
+  } else {
+    this.f = 'M';
   }
-  if (monthes < 0) {
-    years = years - 1;
-    monthes = new Date(new Date(new Date().setFullYear(years)).setMonth(11)).getMonth(); }
-  lastDayOfMonth = new Date(new Date(new Date(new Date().setFullYear(years)).setMonth(monthes + 1)).setDate(0)).getDate();
-  dayOfFirstDateOfMonth = new Date(new Date(new Date(new Date().setFullYear(years)).setMonth(monthes)).setDate(1)).getDay();
-  yearDiv.innerHTML = years;
-  monthDiv.innerHTML = monthNames[monthes];
-  for (i = 0; i <= dayOfFirstDateOfMonth; i = i + 1) {
-    if (dayOfFirstDateOfMonth === 6) { break; }
-    dayItems.innerHTML += "<li> - </li>";
+
+  console.log("this.f == ", this.f);
+};
+
+// Goes to next month
+Calendar.prototype.nextMonth = function() {
+  console.log("Calendar.prototype.nextMonth = function() {");
+
+  if ( this.CurrentMonth == 11 ) {
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    this.CurrentMonth = 0;
+
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    console.log("this.CurrentYear == ", this.CurrentYear);
+
+    this.CurrentYear = this.CurrentYear + 1;
+
+    console.log("this.CurrentYear == ", this.CurrentYear);
+  } else {
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    this.CurrentMonth = this.CurrentMonth + 1;
+
+    console.log("this.CurrentMonth + 1 == ", this.CurrentMonth);
   }
-  for (counter = 1; counter <= lastDayOfMonth; counter = counter + 1) {
-    dayItems.innerHTML += "<li>" + (counter) + "</li>";
+
+  this.showCurrent();
+};
+
+// Goes to previous month
+Calendar.prototype.previousMonth = function() {
+  console.log("Calendar.prototype.previousMonth = function() {");
+
+  if ( this.CurrentMonth == 0 ) {
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    this.CurrentMonth = 11;
+
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    console.log("this.CurrentYear == ", this.CurrentYear);
+
+    this.CurrentYear = this.CurrentYear - 1;
+
+    console.log("this.CurrentYear == ", this.CurrentYear);
+  } else {
+    console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+    this.CurrentMonth = this.CurrentMonth - 1;
+
+    console.log("this.CurrentMonth - 1 == ", this.CurrentMonth);
   }
-  topDiv.style.background = colors[monthes];
-  dayItems.style.background = colors[monthes];
-  if (monthes === new Date().getMonth() && years === new Date().getFullYear()) {
-    dayItems.children[new Date().getDate() + dayOfFirstDateOfMonth].style.background = "#2ecc71";
-  }
+
+  this.showCurrent();
+};
+
+// 
+Calendar.prototype.previousYear = function() {
+  console.log(" ");
+
+  console.log("Calendar.prototype.previousYear = function() {");
+
+  console.log("this.CurrentYear == " + this.CurrentYear);
+
+  this.CurrentYear = this.CurrentYear - 1;
+
+  console.log("this.CurrentYear - 1 i.e. this.CurrentYear == " + this.CurrentYear);
+
+  this.showCurrent();
 }
-prev.onclick = function () {
-  days(-1);
+
+// 
+Calendar.prototype.nextYear = function() {
+  console.log(" ");
+
+  console.log("Calendar.prototype.nextYear = function() {");
+
+  console.log("this.CurrentYear == " + this.CurrentYear);
+
+  this.CurrentYear = this.CurrentYear + 1;
+
+  console.log("this.CurrentYear - 1 i.e. this.CurrentYear == " + this.CurrentYear);
+
+  this.showCurrent();
+}              
+
+// Show current month
+Calendar.prototype.showCurrent = function() {
+  console.log(" ");
+
+  console.log("Calendar.prototype.showCurrent = function() {");
+
+  console.log("this.CurrentYear == ", this.CurrentYear);
+
+  console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+  this.Calendar(this.CurrentYear, this.CurrentMonth);
 };
-next.onclick = function () {
-  days(1);
+
+// Show month (year, month)
+Calendar.prototype.Calendar = function(y,m) {
+  console.log(" ");
+
+  console.log("Calendar.prototype.Calendar = function(y,m){");
+
+  typeof(y) == 'number' ? this.CurrentYear = y : null;
+
+  console.log("this.CurrentYear == ", this.CurrentYear);
+
+  typeof(y) == 'number' ? this.CurrentMonth = m : null;
+
+  console.log("this.CurrentMonth == ", this.CurrentMonth);
+
+  // 1st day of the selected month
+  var firstDayOfCurrentMonth = new Date(y, m, 1).getDay();
+
+  console.log("firstDayOfCurrentMonth == ", firstDayOfCurrentMonth);
+
+  // Last date of the selected month
+  var lastDateOfCurrentMonth = new Date(y, m+1, 0).getDate();
+
+  console.log("lastDateOfCurrentMonth == ", lastDateOfCurrentMonth);
+
+  // Last day of the previous month
+  console.log("m == ", m);
+
+  var lastDateOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+
+  console.log("lastDateOfLastMonth == ", lastDateOfLastMonth);
+
+  console.log("Print selected month and year.");
+  var monthandyearhtml = '<span id="monthandyearspan">' + this.Months[m] + ' - ' + y + '</span>';
+
+  console.log("monthandyearhtml == " + monthandyearhtml);
+
+var html = '<table>';
+html += '<tr>';
+console.log(" ");
+console.log("Write the header of the days of the week");
+for(var i=0; i < 7;i++) {
+console.log("i == ", i);
+console.log("this.DaysOfWeek[i] == ", this.DaysOfWeek[i]);
+html += '<th class="daysheader">' + this.DaysOfWeek[i] + '</th>';
+  }
+  
+html += '</tr>';
+console.log("Before conditional operator this.f == ", this.f);
+var p = dm = this.f == 'M' ? 1 : firstDayOfCurrentMonth == 0 ? -5 : 2;
+console.log("After conditional operator");
+console.log("this.f == ", this.f);
+console.log("p == ", p);
+console.log("dm == ", dm);
+console.log("firstDayOfCurrentMonth == ", firstDayOfCurrentMonth);
+
+var cellvalue;
+for (var d, i=0, z0=0; z0<6; z0++) {
+html += '<tr>';
+console.log("Inside 1st for loop - d == " + d + " | i == " + i + " | z0 == " + z0);
+  
+for (var z0a = 0; z0a < 7; z0a++) {
+console.log("Inside 2nd for loop");
+console.log("z0a == " + z0a);
+d = i + dm - firstDayOfCurrentMonth;
+console.log("d outside if statm == " + d);
+
+      // Dates from prev month
+if (d < 1){
+console.log("d < 1");
+console.log("p before p++ == " + p);
+cellvalue = lastDateOfLastMonth - firstDayOfCurrentMonth + p++;
+console.log("p after p++ == " + p);
+console.log("cellvalue == " + cellvalue);
+html += '<td id="prevmonthdates">' + 
+              '<span id="cellvaluespan">' + (cellvalue) + '</span><br/>' + 
+            '</td>';
+  // Dates from next month
+} 
+else if ( d > lastDateOfCurrentMonth){
+console.log("d > lastDateOfCurrentMonth");
+console.log("p before p++ == " + p);
+html += '<td id="nextmonthdates">' + (p++) + '</td>';
+console.log("p after p++ == " + p);
+// Current month dates
+} else {
+html += '<td id="currentmonthdates">' + (d) + '</td>';
+console.log("d inside else { == " + d);
+p = 1;
+console.log("p inside } else { == " + p);
+      }
+if (i % 7 == 6 && d >= lastDateOfCurrentMonth) {
+console.log("INSIDE if (i % 7 == 6 && d >= lastDateOfCurrentMonth) {");
+console.log("i == " + i);
+console.log("d == " + d);
+console.log("z0 == " + z0);
+z0 = 10; // no more rows
+      }
+console.log("i before i++ == " + i);
+i++;
+console.log("i after i++ == " + i);         }
+html += '</tr>';
+}
+// Closes table
+html += '</table>';
+
+document.getElementById("monthandyear").innerHTML = monthandyearhtml;
+
+document.getElementById(this.divId).innerHTML = html;
 };
-days(0);
+
+// On Load of the window
+window.onload = function() {
+  
+  // Start calendar
+  var c = new Calendar({
+    ParentID:"divcalendartable",
+
+    DaysOfWeek:[
+    'MON',
+    'TUE',
+    'WED',
+    'THU',
+    'FRI',
+    'SAT',
+    'SUN'
+    ],
+
+    Months:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ],
+
+    Format:'dd/mm/yyyy'
+  });
+
+  c.showCurrent();
+  
+  // Bind next and previous button clicks
+  getId('btnPrev').onclick = function(){
+    c.previousMonth();
+  };
+
+  getId('btnPrevYr').onclick = function(){
+    c.previousYear();
+  };
+
+  getId('btnNext').onclick = function(){
+    c.nextMonth();
+  };
+
+  getId('btnNextYr').onclick = function(){
+    c.nextYear();
+  };                        
+}
+
+// Get element by id
+function getId(id) {
+  return document.getElementById(id);
+}
 
 function myD(){
 document.getElementById("searchBar");  
-  if(searchBar.value){
-      screen1 = document.getElementById("serving");
-        { screen1.innerHTML = "1";}
-      screen2 = document.getElementById("servingcalories");
-        { screen2.innerHTML = "150 KCal";}}false};
+if(searchBar.value){
+screen1 = document.getElementById("serving");
+{ screen1.innerHTML = "1";}
+screen2 = document.getElementById("servingcalories");
+{ screen2.innerHTML = "150 KCal";}}false};
 
 
 function reset() {
-screen = document.getElementById("searchBar"); 
+  screen = document.getElementById("searchBar"); 
 if(searchBar.value){
 searchBar.value = screen.innerHTML ="";
 screen1 = document.getElementById("serving");
@@ -84,8 +325,7 @@ function addserv(){
   screen1 = document.getElementById("serving");
   screen2 = document.getElementById("servingcalories");
   screen = document.getElementById("searchBar"); 
-  var table = document.getElementById("myTable");
-    
+var table = document.getElementById("myTable");
   if(screen1.innerHTML!= "0" && table.rows.length < 3){
     var row = table.insertRow(0);
     var cell11 = row.insertCell(0);

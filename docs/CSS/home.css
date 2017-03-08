@@ -4,10 +4,8 @@ header, footer {
     background-color: black;
     clear: left;
     text-align: center;
-    font-family:Cursive;
-    font-size:20px;
+    font-size: 20px;
 }
-
 
 /* __________Strip with tabs______________*/
 /* Remove margins and padding from the list, and add a black background color */
@@ -78,7 +76,7 @@ html{
 
 .testbox1 {
   display: inline-block;
-  margin: 50px auto;
+  margin: 30px auto;
   text-align: center;
   width: 650px; 
   height: 500px; 
@@ -90,6 +88,7 @@ html{
   -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
   box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
   border: solid 2px #cbc9c9;
+  float: right;
 }
 
 form{
@@ -179,7 +178,7 @@ a.button:hover {
 }
 
 .whole-body {
-  background: url(https://raw.githubusercontent.com/aagam1210/Team-DASH/master/docs/Images/dessertcover1.jpg);
+  background: url(../Images/Background1.jpg);
   background-repeat: no-repeat;
   background-size: 1350px 820px;
 }
@@ -205,64 +204,13 @@ ul{
 li:not(:first-child){
   cursor: pointer;
 }
-.calender{
-  width: 30%;
-  margin: auto;
-  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
-}
-.calender .month{
-  background-color: #1fd16a;
-  padding: 2px;
-  color: #302f2f;
-  width: 100%;
-  position: relative;
-}
-.calender .month .next,.calender .month .prev{
-  position: absolute;
-  top: calc(100% - 75px);
-  cursor: pointer;
-  padding: 5px;
-  display: block;
-}
-.calender .month .prev{
-  left: 5px;
-}
-.calender .month .next{
-  right: 5px;
-}
-.calender .month .next:hover,.calender .month .prev:hover{
-  background-color: rgba(0,0,0,.2);
-}
-.calender .weeks{display: flex;}
-.calender .weeks li{
-  background-color: #bdc3c7;
-  flex: 1;
-  opacity: .5;
-  position: relative;
-  animation: motion 2s;
-  padding: 10px; 
-}
-.calender .weeks li:hover{background-color: rgba(0,0,0,.2);}
-
-.calender .days {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.calender .days li{
-  flex-basis: calc(100% / 7);
-  padding: 10px 0;
-  opacity: .6;
-  background-color: #bdc3c7;
-}
-.calender .days li:hover{background-color: rgba(0,0,0,.3);}
 
 /*_____Goal Calorie box__________*/
 
 .boxed {
   border: 3px solid green ;
   font-family: arial, sans-serif;
-  font-size:30px;
+  font-size: 30px;
 }
 /*_______________*/
 
@@ -291,9 +239,6 @@ li:not(:first-child){
   width: 100%;
   heigth: 50%;
 }*/
-
-.tail {
-}
 
 #searchBar {
   border: 1px solid #000000;
@@ -376,7 +321,7 @@ header, footer {
 
 .div-body 
 { 
-  background: url(../Images/dessertcover1.jpg) 
+  background: url(../Images/Background1.jpg) 
   no-repeat fixed;
   background.opacity: 0.2;
   background-size: 100% 100%
@@ -388,7 +333,7 @@ header, footer {
 
 .container {
   background-color:#000000;
-  overflow:auto;
+  overflow: auto;
 }
 
 .website-name-div {
@@ -452,6 +397,7 @@ table {
     border-collapse: collapse;
     table-layout:fixed;
     width: 100%;
+  page-break-inside:auto;
 }
 
 td, th {
@@ -473,4 +419,142 @@ td, th {
   text-align: center;
 }
 
-/*________________*/
+html, body { margin: 0; padding: 0; }
+
+.divcalendartable {
+  border-collapse: collapse;
+  font-family: Georgia, Times, serif;
+}
+
+th {
+  border: 2px solid #A8A8A8;
+  vertical-align: top;
+  
+}
+
+td {
+  width:20px; 
+  height:20px;
+  text-transform:uppercase;
+  font-size:90%; 
+  padding: 10px;
+  border: 3px solid #A8A8A8;
+  vertical-align: top;
+  margin: 30px auto;
+}
+
+.divcalendar {
+  margin:20px auto;
+  width:400px;
+  height:320px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  font-family:'Roboto';
+  border-radius:8px 8px 0px 0px;
+  background-color: white;
+  padding: 2px;
+  float: center;
+  margin: 10px auto;
+    /*background-color: #FFCC00;*/
+}
+
+#calendaroverallcontrols {
+  text-align: center;
+  background: #ed9d1c;
+}
+
+#calendarmonthcontrols {
+  display: inline-block;
+}
+
+#calendarmonthcontrols > div, #calendarmonthcontrols > a {
+    display: inline-block;
+}    
+
+#btnPrevYr {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  vertical-align: middle;     
+}
+
+#btnPrev {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+#monthandyearspan {
+  width: 50px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}    
+
+#monthandyear {
+  vertical-align: middle;
+}
+
+#btnNext {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#btnNextYr {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  vertical-align: middle;
+  /*background: #00FFCC;*/
+}        
+
+#divcalendartable {
+  clear: both;
+}
+
+.daysheader {
+  background-color: #fcc264;
+  color:white;
+  text-align:center;
+  font-family:'Roboto';
+  padding:10px;
+  height:40px;
+  border-radius:8px 8px 0px 0px;
+}
+
+#prevmonthdates {
+  background-color: #E0E0E0;
+}
+
+#nextmonthdates {
+  background-color: #E0E0E0;
+}
+
+#currentmonthdates {
+  background-color: #FFFFFF;
+}
+.swim {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  text-align: center;
+  background: #445511;
+  color: #F5F5F5;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.chrono {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  text-align: center;
+  background: #778899;
+  color: #F5F5F5;
+  margin-bottom: 5px;
+  padding: 5px;
+}
