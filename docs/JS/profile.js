@@ -36,10 +36,11 @@ function getQueryVariable(variable)
        return(false);
 }
 
-function validate () {
+function saveBMI() {
+  
 	name = document.getElementById('name').value;
 	email = document.getElementById('email').value;
-	pnumber = document.getElementById('pnumber').value.parseInt();
+	pnumber = document.getElementById('pnumber').value;
 	age = document.getElementById('age').value;
 	gender = document.getElementById('gender').value;
 	Height = document.getElementById('Height').value;
@@ -63,22 +64,22 @@ function validate () {
   		alert("Please enter valid age");
   		flag=false;
   	}
-	else if(isNaN(pnumber) || pnumber < 1000000000 || pnumber > 9999999999) {
-  		alert("Please enter valid phone number");
-  		flag=false;
-  	}
+	// else if(isNaN(pnumber.parseInt()) || pnumber < 1000000000 || pnumber > 9999999999) {
+ //  		alert("Please enter valid phone number");
+ //  		flag=false;
+ //  	}
   	else if(Height != '' || Weight !='') {
- 		Weight1 = Weight * 0.45;
-		Height1 = (Height * 12 * 0.025)*(Height * 12 * 0.025);
-		BMI = Weight1/Height1;
-		if(BMI < 19)
-			document.getElementById('CalorieCount').value = "1600";
-		else if(19 < BMI && BMI < 25)
-			document.getElementById('CalorieCount').value = "1300";
-		else if(BMI > 25) 
-			document.getElementById('CalorieCount').value = "1000";
-		CC = document.getElementById('CalorieCount').value;
-    alert("Saved");
+      Weight1 = Weight * 0.45;
+		  Height1 = (Height * 12 * 0.025)*(Height * 12 * 0.025);
+		  BMI = Weight1/Height1;
+		  if(BMI < 19)
+        document.getElementById('CalorieCount').value = "1600";
+		  else if(19 < BMI && BMI < 25)
+			  document.getElementById('CalorieCount').value = "1300";
+		  else if(BMI > 25) 
+			  document.getElementById('CalorieCount').value = "1000";
+		  CC = document.getElementById('CalorieCount').value;
+      alert("Saved");
 	}
   	
 /* 	var string_url = "../HTML/profile.html?name=" + name + "&email=" + email + "&age=" + age + "&pnumber=" + pnumber + "&gender=" + gender + "&Height=" + Height + "&Weight=" + Weight + "&CalorieCount=" + CC;
