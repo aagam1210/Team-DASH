@@ -45,3 +45,16 @@ function validate () {
   		window.location.href=string_url;
   	}
 }
+
+function loginValidate () {
+  username = document.getElementById('username').value;
+  password = document.getElementById('password').value;
+  
+  if(username == "messi123" && password == "messi123") {
+    window.location = "./home.html";
+  }
+  else {
+    alert("Invalid username or password!");
+  }
+
+}
